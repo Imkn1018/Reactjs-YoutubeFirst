@@ -1,0 +1,34 @@
+.item {
+  display: block;
+  width: 22.5%;
+  margin: 1rem 1.25%;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 960px) {
+  .item {
+    width: 45%;
+    margin: 1rem 2.5%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .item {
+    width: 90%;
+    margin: 1rem auto;
+  }
+}
+
+.item img {
+  width: 100%;
+}
+
+.item span {
+  color: white;
+}
+
+.item p {
+  color: white;
+  size: 1.2rem;
+}
+/*# sourceMappingURL=VIdeoGridItem.module.css.map */
