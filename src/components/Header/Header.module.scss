@@ -14,6 +14,10 @@
     line-height: 56px;
     padding-left: 1.5rem;
     text-decoration: none;
+    img {
+      height: 110%;
+      width: auto;
+    }
   }
   .item {
     &:first-child {

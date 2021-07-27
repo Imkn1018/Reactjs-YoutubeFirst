@@ -5,6 +5,7 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { useHistory } from 'react-router-dom';
 import { Store } from '../../store/index';
 import Style from './Header.module.scss';
+import Logo from './headerLogo.png';
 
 export const Header = (props) => {
   const [term, setTerm] = useState('');
@@ -21,7 +22,9 @@ export const Header = (props) => {
   return (
     <div className={Style.header}>
       <div className={Style.item}>
-        <Link to="/">Video Tube</Link>
+        <Link to="/">
+          <img src={Logo} />
+        </Link>
       </div>
       <div className={Style.item}>
         <form onSubmit={handleSubmit}>
