@@ -12,12 +12,12 @@ export const Top = (props) => {
   useEffect(() => {
     fetchPopularData().then((res) => {
       console.log('data', res);
-      
+
       setGloabalState({
         type: 'SET_POPULAR',
         payload: { popular: res.data.items },
       });
-      console.log(typeof(globalState.popular))
+      console.log(typeof globalState.popular);
     });
   }, []);
   return (
@@ -29,10 +29,10 @@ export const Top = (props) => {
               <VideoGridItem
                 id={popular.id}
                 key={popular.id}
-                src={popular.snippet.thumbnails.standard.url}
+                src={popular.snippet.thumbnails.standard?.url}
                 title={popular.snippet.title}
                 channel_name={popular.snippet.channelTitle}
-              ></VideoGridItem>
+              />
             );
           })}
       </VideoGrid>

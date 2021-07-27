@@ -1,17 +1,28 @@
 .item {
   display: block;
   width: 100%;
-  margin-bottom:1rem;
-  img{
+  margin-bottom: 1rem;
+  img {
     width: 50%;
+    @media screen and (max-width: 560px) {
+      width: 100%;
+    }
   }
-  .info{
+  .info {
     display: inline-block;
     width: 46%;
     padding: 2%;
     vertical-align: top;
+    @media screen and (max-width: 960px) {
+      width: 100%;
+      padding: 0;
+    }
   }
   span {
     color: white;
+  }
+  p {
+    color: white;
+    size: 1.2rem;
   }
 }

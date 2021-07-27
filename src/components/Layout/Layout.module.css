@@ -21,4 +21,15 @@
   width: 100%;
   background-color: #181818;
 }
+
+@media screen and (max-width: 960px) {
+  .wrapper .main {
+    max-width: 90%;
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 /*# sourceMappingURL=Layout.module.css.map */
